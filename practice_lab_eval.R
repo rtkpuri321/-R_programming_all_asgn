@@ -404,8 +404,6 @@ res1 <- cor.test(y_pred, test_set$RMSD, method = "pearson")
 print(res1)
 #ACCURACY
 rmse(dataset$RMSD,y_pred)
-print(paste("AIC =",AIC(regressor)))
-print(paste("BIC =",BIC(regressor)))
 plot(y_pred ~ test_set$RMSD, data = test_set)
 abline(lm(y_pred ~ test_set$RMSD))
 
